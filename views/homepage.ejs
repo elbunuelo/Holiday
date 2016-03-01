@@ -1,0 +1,17 @@
+<h1>Check if a date is a holiday</h1>
+
+<p>This service is a work in progress and the idea is to improve it constantly</p>
+
+<h2>Use</h2>
+<p>
+Visit /holiday/check passing in the parameter <b>date</b> in the yyyy-mm-dd format
+and the service will give you a json response with two attributes: success, which
+can be true or false and another parameter which depends on the value of success.
+<ul>
+<li>If success is <em>true</em>, it will return isHoliday which can be either true or false.</li>
+<li>If success is <em>false</em>, it will return message, with tells you the cause of the error.</li>
+</ul>
+</p>
+
+<h2>Current limitations</h2>
+<p>The service only has Colombian holidays for 2016 and can only check one date at the time</p>
